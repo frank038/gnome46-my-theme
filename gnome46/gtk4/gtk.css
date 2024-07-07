@@ -84,3 +84,15 @@ row {
     color: #000000;
     }
 
+treeview {
+    background-color: #E5E5E5;
+    color: #000000;
+    }
+listview {
+    background-color: #E5E5E5;
+    color: #000000;
+    }
+gridview not .nautilus-list-view {
+    background-color: #E5E5E5;
+    color: #000000;
+    }
