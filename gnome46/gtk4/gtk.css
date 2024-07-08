@@ -71,9 +71,11 @@ decoration {
     background-color: #484848;
 }
 
-/* while hovering over a cell */
-/* .nautilus-list-view #NautilusViewCell:hover {background-color: #BDBDBD;} /*
+/* nautilus grid view hovering a cell */
+#NautilusViewCell:hover {background-color: #BDBDBD;} 
+/* nautilus list view hovering a cell */
 .nautilus-list-view #NautilusViewCell:hover {background-color: #CECECE;}
+/* nautilus list view cell selected */
 .nautilus-list-view :selected {background-color: #3584e4;}
 
 /* list and row: white parts of dialogs and nautilus sideview */
