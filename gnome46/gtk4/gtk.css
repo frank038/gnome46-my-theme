@@ -72,7 +72,9 @@ decoration {
 }
 
 /* while hovering over a cell */
-.nautilus-list-view #NautilusViewCell:hover {background-color: #BDBDBD;}
+/* .nautilus-list-view #NautilusViewCell:hover {background-color: #BDBDBD;} /*
+.nautilus-list-view #NautilusViewCell:hover {background-color: #CECECE;}
+.nautilus-list-view :selected {background-color: #3584e4;}
 
 /* list and row: white parts of dialogs and nautilus sideview */
 list {
@@ -84,15 +86,23 @@ row {
     color: #000000;
     }
 
-treeview {
+treeview.view {
     background-color: #E5E5E5;
     color: #000000;
     }
-listview {
+treeview.view:selected {
+    background-color: #3584e4;
+    color: #000000;
+    }
+listview.view {
     background-color: #E5E5E5;
     color: #000000;
     }
-gridview not .nautilus-list-view {
+listview.view:selected {
+    background-color: #3584e4;
+    color: #000000;
+    }
+gridview.view not .nautilus-list-view {
     background-color: #E5E5E5;
     color: #000000;
     }
