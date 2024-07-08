@@ -72,7 +72,7 @@ decoration {
 }
 
 /* nautilus grid view hovering a cell */
-#NautilusViewCell:hover {background-color: #BDBDBD;} 
+#NautilusViewCell:hover not :selected {background-color: #BDBDBD;} 
 /* nautilus list view hovering a cell */
 .nautilus-list-view #NautilusViewCell:hover {background-color: #CECECE;}
 /* nautilus list view cell selected */
