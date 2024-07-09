@@ -71,7 +71,7 @@ decoration {
     background-color: #484848;
 }
 
-/* nautilus grid view hovering a cell */
+/* nautilus grid view hovering over a cell */
 #NautilusViewCell:hover not :selected {background-color: #BDBDBD;} 
 /* nautilus list view hovering a cell */
 .nautilus-list-view #NautilusViewCell:hover {background-color: #CECECE;}
