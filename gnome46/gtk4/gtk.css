@@ -1,0 +1,151 @@
+/* light style */
+/* GTK NAMED COLORS ---------------- use responsibly! */
+@define-color accent_bg_color #6CB6FF;
+@define-color accent_fg_color white;
+@define-color accent_color #6CB6FF;
+@define-color destructive_bg_color @red_3;
+@define-color destructive_fg_color white;
+@define-color destructive_color @red_4;
+@define-color success_bg_color @green_4;
+@define-color success_fg_color white;
+@define-color success_color #1b8553;
+@define-color warning_bg_color @yellow_5;
+@define-color warning_fg_color rgba(0, 0, 0, 0.8);
+@define-color warning_color #9c6e03;
+@define-color error_bg_color @red_3;
+@define-color error_fg_color white;
+@define-color error_color @red_4;
+@define-color window_bg_color #CECECE;
+@define-color window_fg_color #000000;
+@define-color view_bg_color #ffffff;
+@define-color view_fg_color #000000;
+
+@define-color headerbar_bg_color #CECECE;
+@define-color headerbar_fg_color #000000;
+@define-color headerbar_border_color rgba(0, 0, 0, 0.8);
+@define-color headerbar_backdrop_color @window_bg_color;
+@define-color headerbar_shade_color rgba(0, 0, 0, 0.12);
+@define-color headerbar_darker_shade_color rgba(0, 0, 0, 0.12);
+
+@define-color sidebar_bg_color #484848;
+@define-color sidebar_fg_color #ffffff;
+@define-color sidebar_backdrop_color#484848;
+@define-color sidebar_shade_color rgba(0, 0, 0, 0.07);
+@define-color sidebar_border_color rgba(0, 0, 0, 0.07);
+@define-color secondary_sidebar_bg_color #f3f3f3;
+@define-color secondary_sidebar_fg_color rgba(0, 0, 0, 0.8);
+@define-color secondary_sidebar_backdrop_color #484848;
+@define-color secondary_sidebar_shade_color rgba(0, 0, 0, 0.07);
+@define-color secondary_sidebar_border_color rgba(0, 0, 0, 0.07);
+
+@define-color card_bg_color #E5E5E5;
+@define-color card_fg_color #000000;
+@define-color card_shade_color rgba(0, 0, 0, 0.07);
+
+@define-color dialog_bg_color #cecece;
+@define-color dialog_fg_color #000000;
+
+@define-color popover_bg_color #cecece;
+@define-color popover_fg_color #000000;
+@define-color popover_shade_color rgba(0, 0, 0, 0.07);
+
+@define-color thumbnail_bg_color #ffffff;
+@define-color thumbnail_fg_color rgba(0, 0, 0, 0.8);
+@define-color shade_color rgba(0, 0, 0, 0.07);
+@define-color scrollbar_outline_color white;
+
+/**/
+popover.background > contents {border: 1px solid #1E90FF;}
+
+/* window border colour and border width */
+window {
+    background-color: #CECECE;
+    color: #000000;
+    border: 1px solid #1E90FF;
+    }
+decoration {
+    border: 1px solid #1E90FF;
+    } 
+
+/* sidebar background: nautilus and control center and others */
+.navigation-sidebar {
+    background-color: #484848;
+    }
+/* nautilus sidebar rows and control center and others */
+.navigation-sidebar row {
+    background-color: #484848;
+    color: #ffffff;
+    }
+
+/* nautilus icon view background */
+.nautilus-grid-view {
+    background-color: #CECECE;
+    color: #000000;
+    }
+/* nautilus each cell background 
+#NautilusViewCell {background-color: #BD0000;} */
+/* nautilus grid view hovering over a cell 
+#NautilusViewCell:hover not :selected {background-color: #BDBDBD;}  */
+/* nautilus icon view hovering a cell */
+.nautilus-grid-view #NautilusViewCell:hover not :selected {background-color: #BDBDBD;}
+/* nautilus list view description bar
+.nautilus-list-view {background-color: yellow;} */
+/* nautilus list view cell selected */
+.nautilus-list-view :selected {background-color: #b5c7da;}
+/* nautilus list view cell hovered */
+.nautilus-list-view #NautilusViewCell:hover {background-color: #b5c7da;}
+/* nautilus list view cell alternate colours */
+.nautilus-list-view row:nth-child(2n+1) {
+    background-color: #D0D0D0;
+    }
+.nautilus-list-view row:nth-child(2n) {
+    background-color: #f0f0f0;
+    }
+
+/* list and row: white parts of dialogs and others and nautilus sideview */
+list {
+    background-color: #E5E5E5;
+    color: #000000;
+    }
+list:selected {
+    background-color: #CECECE;
+    color: #000000;
+    }
+row {
+    background-color: #E5E5E5;
+    color: #000000;
+    }
+row:selected {
+    background-color: #CECECE;
+    color: #000000;
+    }
+
+treeview {
+    background-color: #E5E5E5;
+    color: #000000;
+    }
+treeview.view:selected {
+    background-color: #b5c7da;
+    color: #000000;
+    }
+listview.view {
+    background-color: #E5E5E5;
+    color: #000000;
+    }
+listview.view:selected {
+    background-color: #b5c7da;
+    color: #000000;
+    }
+/* the followng affect both nautilus list view and combo row
+listview row:nth-child(2n+1) {
+    background-color: #D0D0D0;
+    }
+listview row:nth-child(2n) {
+    background-color: #f0f0f0;
+    } */
+
+gridview.view not .nautilus-grid-view {
+    background-color: #E5E5E5;
+    color: #000000;
+    }
+
