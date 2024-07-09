@@ -58,18 +58,18 @@ popover.background > contents {border: 1px solid #1E90FF;}
 
 /* window border colour and border width */
 window {
-  background-color: #CECECE;
-  color: #000000;
-  border: 1px solid #1E90FF;
-}
+    background-color: #CECECE;
+    color: #000000;
+    border: 1px solid #1E90FF;
+    }
 decoration {
-  border: 1px solid #1E90FF;
-} 
+    border: 1px solid #1E90FF;
+    } 
 
 /* sidebar background: nautilus and others */
 .navigation-sidebar {
     background-color: #484848;
-}
+    }
 
 /* nautilus grid view hovering over a cell */
 #NautilusViewCell:hover not :selected {background-color: #BDBDBD;} 
@@ -79,16 +79,23 @@ decoration {
 .nautilus-list-view :selected {background-color: #b5c7da;}
 /* nautilus list view cell hovered */
 .nautilus-list-view #NautilusViewCell:hover {background-color: #b5c7da;}
+/* nautilus list view cell alternate colours */
+.nautilus-list-view row:nth-child(2n+1) {
+    background-color: #D0D0D0;
+    }
+.nautilus-list-view row:nth-child(2n) {
+    background-color: #f0f0f0;
+    }
 
 /* list and row: white parts of dialogs and nautilus sideview */
 list {
     background-color: #E5E5E5;
     color: #000000;
-}
+    }
 list:selected {
     background-color: #CECECE;
     color: #000000;
-}
+    }
 row {
     background-color: #E5E5E5;
     color: #000000;
@@ -114,13 +121,7 @@ listview.view:selected {
     background-color: #b5c7da;
     color: #000000;
     }
-listview row:nth-child(2n+1) {
-	background-color: #D0D0D0;
-}
-listview row:nth-child(2n) {
-	background-color: #f0f0f0;
-}
 gridview.view not .nautilus-list-view {
     background-color: #E5E5E5;
     color: #000000;
-}
+    }
