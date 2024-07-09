@@ -66,9 +66,14 @@ decoration {
     border: 1px solid #1E90FF;
     } 
 
-/* sidebar background: nautilus and others */
+/* sidebar background: nautilus and control center and others */
 .navigation-sidebar {
     background-color: #484848;
+    }
+/* nautilus sidebar rows and control center and others */
+.navigation-sidebar row {
+    background-color: #484848;
+    color: #ffffff;
     }
 
 /* nautilus grid view hovering over a cell */
