@@ -1,8 +1,8 @@
 /* screenshot dialog */
 .screenshot-ui-panel {border: 1px; border-style: solid; border-color: #1E90FF;}
 
-/* OSD - eg. volume */
-.osd-window { border: 1px; border-style: solid; border-color: #1E90FF;}
+/* alt-tab - OSD (eg. volume) - workspace switcher */
+.switcher-list, .osd-window, .workspace-switcher { border: 1px; border-style: solid; border-color: #1E90FF;}
 
 /* Password or Authentication Dialog */
 .prompt-dialog {border: 1px; border-style: solid; border-color: #1E90FF;}
