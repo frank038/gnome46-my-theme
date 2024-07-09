@@ -85,6 +85,10 @@ list {
     background-color: #E5E5E5;
     color: #000000;
 }
+list:selected {
+    background-color: #CECECE;
+    color: #000000;
+}
 row {
     background-color: #E5E5E5;
     color: #000000;
