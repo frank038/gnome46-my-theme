@@ -89,6 +89,10 @@ row {
     background-color: #E5E5E5;
     color: #000000;
     }
+row:selected {
+    background-color: #CECECE;
+    color: #000000;
+    }
 
 treeview {
     background-color: #E5E5E5;
