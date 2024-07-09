@@ -16,7 +16,13 @@
 .popup-menu-content, /* popover content */
 .candidate-popup-content { /* datemenu, quick settings... */
     border: 1px; 
-	  border-style: solid;
+    border-style: solid;
     border-color: #1E90FF;
 }
 
+/* Modal dialogs */
+.modal-dialog {
+    border: 1px; 
+    border-style: solid;
+    border-color: #1E90FF;
+}
