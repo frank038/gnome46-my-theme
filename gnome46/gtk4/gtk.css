@@ -66,7 +66,7 @@
 @define-color my_border_color #1E90FF;
 @define-color my_nautilus_grid_hover_cell #BDBDBD;
 @define-color my_nautilus_list_hover_cell #b5c7da;
-@define-color my_nautilus_list_row_odd #D0D0D0;
+@define-color my_nautilus_list_row_odd #D9D9D9;
 @define-color my_nautilus_list_row_even #F0F0F0;
 
 /* custom colours */
@@ -93,10 +93,12 @@
 @define-color popover_bg_color @my_window_bg_color;
 @define-color popover_fg_color @my_black_fg_color;
 
+
 /**/
 popover.background > contents {border: 1px solid @my_border_color;}
 
 /* window border colour and border width */
+/* box-shadow: 0 3px 9px 1px #0000ffaa; */
 window {
     background-color: @my_window_bg_color;
     color: @my_black_fg_color;
@@ -131,22 +133,23 @@ decoration {
 #NautilusViewCell:hover not :selected {background-color: @my_nautilus_grid_hover_cell;}  */
 /* nautilus icon view hovering over a cell */
 .nautilus-grid-view #NautilusViewCell:hover not :selected {background-color: @my_nautilus_grid_hover_cell;}
-/* nautilus list view description bar
+
+/* nautilus list view 
 .nautilus-list-view {background-color: yellow;} */
 /* nautilus list view cell selected */
 .nautilus-list-view :selected {background-color: @my_nautilus_list_hover_cell;}
-/* nautilus list view cell hovered */
-.nautilus-list-view #NautilusViewCell:hover {background-color: @my_nautilus_list_hover_cell;}
-/* nautilus list view cell alternate colours */
+/* nautilus list view cell hovered
+.nautilus-list-view #NautilusViewCell:hover {background-color: @my_nautilus_list_hover_cell;} */
+/* nautilus list view cell alternate colours
 .nautilus-list-view row:nth-child(2n+1) {
     background-color: @my_nautilus_list_row_odd;
     }
 .nautilus-list-view row:nth-child(2n) {
     background-color: @my_nautilus_list_row_even;
-    }
+    } */
 
 /* list and row: white parts of dialogs and others and nautilus sideview */
-list {
+list not .nautilus-list-view {
     background-color: @my_light_bg_color;
     color: @my_black_fg_color;
     }
@@ -154,7 +157,7 @@ list:selected {
     background-color: @my_window_bg_color;
     color: @my_black_fg_color;
     }
-row {
+row not .nautilus-list-view {
     background-color: @my_light_bg_color;
     color: @my_black_fg_color;
     }
