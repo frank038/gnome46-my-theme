@@ -63,7 +63,7 @@
 @define-color my_window_bg_color #CECECE;
 @define-color my_sidebar_bg_color #484848;
 @define-color my_light_bg_color #E5E5E5;
-@define-color my_border_color #1E90FF;
+@define-color my_border_color #4E9F5C;
 @define-color my_nautilus_grid_hover_cell #BDBDBD;
 @define-color my_nautilus_list_hover_cell #b5c7da;
 @define-color my_nautilus_list_row_odd #D9D9D9;
@@ -115,6 +115,10 @@ decoration {
 /* nautilus sidebar rows and control center and others */
 .navigation-sidebar row {
     background-color: @my_sidebar_bg_color;
+    color: @my_white_fg_color;
+    }
+.navigation-sidebar row:hover {
+    background-color: #797979;
     color: @my_white_fg_color;
     }
 /* nautilus sidebar separators */
@@ -194,4 +198,31 @@ gridview.view not .nautilus-grid-view {
     background-color: @my_light_bg_color;
     color: @my_black_fg_color;
     }
+
+/*
+#panel { height: 42px;}
+*/
+
+/*
+headerbar {
+    margin: 0 1em 0 1em;
+    padding: 0;
+    border-width: 0px;
+    font-size: 6pt;
+    min-height: 0px;
+}
+
+headerbar * {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    border-width: 0;
+    min-height: 0px;
+}
+
+headerbar box {
+    padding: 0.1em 0.5em 0.1em 0.5em;
+}
+*/
+
 
