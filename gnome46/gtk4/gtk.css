@@ -117,10 +117,6 @@ decoration {
     background-color: @my_sidebar_bg_color;
     color: @my_white_fg_color;
     }
-.navigation-sidebar row:hover {
-    background-color: #797979;
-    color: @my_white_fg_color;
-    }
 /* nautilus sidebar separators */
 .navigation-sidebar>separator {
     background-color: @my_window_bg_color;
@@ -170,6 +166,16 @@ row:selected {
     color: @my_black_fg_color;
     }
 
+row:hover {
+    background-color: #797979;
+    color: @my_white_fg_color;
+    }
+    
+row:selected:hover {
+    background-color: @my_window_bg_color;
+    color: @my_black_fg_color;
+    }
+    
 treeview {
     background-color: @my_light_bg_color;
     color: @my_black_fg_color;
